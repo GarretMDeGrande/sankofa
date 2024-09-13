@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Nonprofit Organization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo"><img src="logo2.jpg"></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#" class="donate-button" id="donateButton">Donate</a>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or would like to get involved, please reach out to us:</p>
+        <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+<footer>
+    <div class="container">
+    <div class="row flex-container">
+        <div class="col-lg-4 spacing-left space-below">
+            <h3>Office Hours</h3>
+            <p>Monday - Friday</p>
+            <p>9:00am - 5:00pm</p>
+        </div>
+        <div class="col-lg-4 spacing-left">
+            <h3>Our Info</h3>
+            <p>(206)-458-4944</p>
+            <p>info@sankofaforpeace.org</p>
+            <p>Dr. Francis Gadigbe</p>
+            <p>Executive Director</p>
+        </div>
+        <div class="col-lg-4 spacing-left">
+            <h3>Our Address</h3>
+            <p>541 Smithers Ave S, Suite B</p>
+            <p>Renton, WA 98057</p>
+        </div>
+    </div>
+</div>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d43148.02627029775!2d-122.209899!3d47.475269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905d52f2992143%3A0x9d5b80c15d309440!2s541%20Smithers%20Ave%20S%20b%2C%20Renton%2C%20WA%2098057!5e0!3m2!1sen!2sus!4v1725995068268!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen></iframe>
+    </div>
+    <div class="copywrite container center-content">
+        <div class="copywrite-left">
+            <p>&copy; 2024 Sankofa For Peace | Designed By: Garret DeGrande</p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- PayPal Donate Button -->
+    <script>
+        document.getElementById('donateButton').addEventListener('click', function() {
+            window.location.href = 'https://www.paypal.com/donate?hosted_button_id=YOUR_PAYPAL_BUTTON_ID';
+        });
+    </script>
+
+</body>
+</html>
