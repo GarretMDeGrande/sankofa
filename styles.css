@@ -204,7 +204,8 @@ p {
     display: flex;
     flex-direction: column; /* Stack inputs vertically */
     gap: 10px; /* Space between form elements */
-    max-width: 50%; /* Prevent form from exceeding container width */
+    width: 100%;
+    max-width: 30%; /* Prevent form from exceeding container width */
     margin: 0 auto; /* Center the form */
     box-sizing: border-box; /* Ensure padding doesn't affect width */
     border-radius: solid 1px #002244;
@@ -222,7 +223,6 @@ p {
 
 .contact1 textarea {
     padding: 10px;
-    width: 100%; /* Full width within the container */
     height: 150px; /* Increase the height for more room */
     border: 1px solid #002244;
     border-radius: 5px;
@@ -306,6 +306,7 @@ footer a {
 
     .contact1 form {
         padding: 0 10px; /* Add some horizontal padding */
+        max-width: 100%; /* Full width on mobile */
     }
 
     .content-wrapper {
@@ -317,4 +318,3 @@ footer a {
         text-align: center;
     }
 }
-
