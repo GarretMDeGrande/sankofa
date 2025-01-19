@@ -204,7 +204,7 @@ p {
     display: flex;
     flex-direction: column; /* Stack inputs vertically */
     gap: 10px; /* Space between form elements */
-    max-width: 30%; /* Prevent form from exceeding container width */
+    max-width: 50%; /* Prevent form from exceeding container width */
     margin: 0 auto; /* Center the form */
     box-sizing: border-box; /* Ensure padding doesn't affect width */
     border-radius: solid 1px #002244;
