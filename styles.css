@@ -192,6 +192,7 @@ p {
 }
 
 .contact1 {
+    padding: 20px; /* Adjust padding for mobile-friendly spacing */
     background-color: #6699CC;
 }
 
@@ -201,18 +202,22 @@ p {
 
 .contact1 form {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 600px; /* Set the max width */
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 10px; /* Space between form elements */
+    max-width: 30%; /* Prevent form from exceeding container width */
     margin: 0 auto; /* Center the form */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
     border-radius: solid 1px #002244;
 }
 
-.contact1 input, .contact1 textarea {
+.contact1 input, 
+.contact1 textarea {
+    width: 100%; /* Ensure inputs take full width of parent */
+    max-width: 100%; /* Prevent inputs from overflowing */
     padding: 10px;
-    width: 100%; /* Full width within the container */
     border: 1px solid #002244;
     border-radius: 5px;
+    box-sizing: border-box; /* Include padding in total width */
 }
 
 .contact1 textarea {
@@ -230,6 +235,8 @@ p {
     color: white;
     border: none;
     cursor: pointer;
+    text-align: center;
+    padding: 12px;
 }
 
 .contact1 input[type="submit"]:hover {
@@ -297,6 +304,10 @@ footer a {
         margin: 0 auto; /* Center the textarea horizontally */
     }
 
+    .contact1 form {
+        padding: 0 10px; /* Add some horizontal padding */
+    }
+
     .content-wrapper {
         flex-direction: column; /* Stack text and image vertically on smaller screens */
         gap: 10px;
@@ -306,3 +317,4 @@ footer a {
         text-align: center;
     }
 }
+
